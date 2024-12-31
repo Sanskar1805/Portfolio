@@ -2,12 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import luffy from "../../Assets/Projects/luffyIcon.jpg";
+import cricketPic from "../../Assets/Projects/CricketorIcon.jpg";
+import expressions from "../../Assets/Projects/publicationEmotions.jpg";
 
 function Projects() {
   return (
@@ -21,70 +18,40 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={luffy}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Anime4u"
+              description="The anime recommendation system, built with React and Node.js, offers an engaging platform for anime enthusiasts. Users
+ can browse trending shows, search by genre, and create accounts to save favorites.Powered by MongoDB for scalable data storage, the platform also allows users to write reviews, enhancing community
+ interaction. A chat feature fosters lively discussions and sharing of anime recommendations, making it a comprehensive hub for anime lovers."
+              ghLink="https://github.com/Sanskar1805/Anime4u"
+              demoLink="https://clientanime4u.onrender.com/"
             />
           </Col>
-
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={cricketPic}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Cricketor"
+              description=" Developed a cricketing website using PHP, with a front-end designed using HTML, CSS, Bootstrap, and JavaScript that
+ features real-time score tracking and interactive elements, demonstrating advanced programming skills and attention to user
+ experience. The project included MySQL database management, enabling users to store historical match data and access real-time scores
+ through match codes."
+              ghLink="https://github.com/Sanskar1805/Cricketor"
             />
           </Col>
-
-          <Col md={4} className="project-card">
+          <Col md={12} className="project-card">
             <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              imgPath={expressions}
+              isBlog={true}
+              title="VQA for Compound Emotions"
+              description="This project advances Visual Question and Answering (VQA) systems by equipping them to recognize and interpret compound
+ emotions in images, addressing the challenge of overlapping emotions. Leveraging VGG 19, attention models, Random Forest, and XGBoost, it delivers a modular, versatile solution for
+ industry applications. The project offers a fresh approach to understanding complex human emotions in visual data by combining cutting-edge
+ techniques."
+              ghLink="https://www.sciencedirect.com/science/article/abs/pii/S0925231224003941?dgcid=coauthor"
             />
           </Col>
         </Row>
